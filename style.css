@@ -8,7 +8,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3rem;
+  /* --header-height: 3rem; */
 
   /*========== Colors ==========*/
   --hue: 174;
@@ -211,6 +211,8 @@ a {
   body {
     margin: 0;
   }
+
+  
   .section {
     padding: 7rem 0 2rem;
   }
@@ -270,6 +272,7 @@ a {
     padding: 5px;
     margin-top: 7px;
     margin-bottom: 7px;
+    /* top: 0; */
     
 }
 
@@ -281,6 +284,7 @@ a {
 
 .top_bar{
     text-align: center;
+    
 }
 
 .a_tel{
@@ -295,6 +299,7 @@ html{
 @media screen and (max-width: 400px) {
     .top_bar{
         padding-top: 0px;
+        margin-top: 0px;
     }
     .logo_img{
         margin-bottom: 20px;
