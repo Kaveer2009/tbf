@@ -31,16 +31,24 @@ window.addEventListener('scroll', scrollHeader)
 
 // nav op start
 
-    /* Open when someone clicks on the span element */
+ /* Set the width of the sidebar to 250px (show it) */
 function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("mySidepanel").style.width = "250px";
   }
   
-  /* Close when someone clicks on the "x" symbol inside the overlay */
+  /* Set the width of the sidebar to 0 (hide it) */
   function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("mySidepanel").style.width = "0";
   }
-
 
 
 // nav op end
+
+
+
+
+// checking product
+
+function check_product() {
+    window.location = "view_product.html";
+}

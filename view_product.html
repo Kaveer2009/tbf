@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="view_product.css">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="images/logo/Shri Ganeshaya Namha 2.png" type="image/x-icon">
 </head>
 <body>
     <body>
@@ -58,14 +56,15 @@
                                 <span class="nav__name">Home</span>
                             </a>
                         </li>
+                        
 
                         <li class="nav__item">
-                          <a href="#home" class="nav__link">
-                              <i class='bx bx-home-alt nav__icon'></i>
-                              <span class="nav__name">Shop <i class="fa-solid fa-caret-down"></i></span>
+                          <a href="#contactme" class="nav__link">
+                              <i class='bx bx-message-square-detail nav__icon'></i>
+                              <span class="nav__name">Contact</span>
                           </a>
                       </li>
-                        
+
                         
                         <li class="nav__item">
                             <a href="#about" class="nav__link">
@@ -78,12 +77,7 @@
 
                         
 
-                        <li class="nav__item op">
-                            <a href="#contactme" class="nav__link">
-                                <i class='material-symbols-outlined nav__icon'>search</i>
-                                <span class="nav__name">search</span>
-                            </a>
-                        </li>
+                        
                         <li class="nav__item op">
                             <a href="#cart.html" class="nav__link">
                                 <i class="material-symbols-outlined nav__icon">shopping_bag</i>
@@ -166,47 +160,103 @@
             </div>
         </center> -->
 
-        <center>
-            <div class="search_bar_for_big">
-                <input type="text" id="search_products" name="search_products" placeholder="Search Products Here">
-                <button class="kvr_btn_blue" style="padding: 15px;">Search</button>
-            </div>
-        </center>
+        
 
 <!-- godfather nav start -->
 
 
 
-<div id="mySidepanel" class="sidepanel">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">
-    <div class="dropdown">
-      <span>Shop <i class="fa-solid fa-caret-down"></i></span>
-      <div class="dropdown-content">
-        <p>Hello World!</p>
-      </div>
-    </div>
-  </a>
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   
-</div>
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        
+      
+      
+      <a href="#">
 
+        <div class="dropdown">
+          <button class="dropbtn">#tbf Furniture <i class="fa-solid fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="dropdown">
+          <button class="dropbtn">Office Chairs <i class="fa-solid fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="dropdown">
+          <button class="dropbtn">Office Tables <i class="fa-solid fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </a>
+      <a href="#">
 
-
+        <div class="dropdown">
+          <button class="dropbtn">Workstations <i class="fa-solid fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="dropdown">
+          <button class="dropbtn">Office Storage <i class="fa-solid fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="dropdown">
+          <button class="dropbtn">Office Furniture <i class="fa-solid fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <button class="kvr_btn_blue" style="padding: 15px;"><i class="fa-solid fa-bolt"></i> Bulk Oders</button>
+      </a>
+    </div>
+  
+  </div>
 
 
 
 
 <!-- godfather nav end -->
-  <center>
-    <!-- <button style="margin-top: 20px;" onclick="check_product()" class="kvr_btn_blue">Buy</button> -->
-  </center>
 
 
 
 
+  <h1>
+    Check
+  </h1>
 
 
 
@@ -215,5 +265,6 @@
 
     <!-- js linking -->
     <script src="app.js"></script>
+    <script src="view_product.js"></script>
 </body>
 </html>
