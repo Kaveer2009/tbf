@@ -20,14 +20,14 @@
         <!-- top bar -->
         
         <div class="top_bar">
-
+            
             <button class="kvr_btn_blue"><i class="fa-brands fa-facebook-f"></i></button>
             <button class="kvr_btn_blue"><i class="fa-brands fa-instagram"></i></button>
             <button class="kvr_btn_blue"><i class="fa-brands fa-youtube"></i></button>
             <button class="kvr_btn_blue"><i class="fa-brands fa-pinterest"></i></button>
             <button class="kvr_btn_blue"><i class="fa-brands fa-linkedin-in"></i></button>
             <button class="kvr_btn_blue"><i class="fa-brands fa-spotify"></i></button>
-
+            
             <a class="a_tel" href="tel:+91 9811764643"><i class="fa-solid fa-phone"></i> +91 9811764643</a>
 
 
@@ -59,13 +59,14 @@
                             </a>
                         </li>
 
-                        <li class="nav__item">
-                          <a href="#home" class="nav__link">
+                        <li class="nav__item og">
+                          <a href="#shop" class="nav__link" id="shop-hover">
                               <i class='bx bx-home-alt nav__icon'></i>
-                              <span class="nav__name">Shop <i class="fa-solid fa-caret-down"></i></span>
+                              <span class="nav__name">Shop </span>
                           </a>
+                          
                       </li>
-                        
+                      
                         
                         <li class="nav__item">
                             <a href="#about" class="nav__link">
@@ -73,27 +74,38 @@
                                 <span class="nav__name">About</span>
                             </a>
                         </li>
-
+                        <li class="nav__item og">
+                          <a href="#about" class="nav__link">
+                            <button class="search_nav_btn" style="padding-right: 20px;"><i style="padding-right: 20px; padding-left: 20px;" class="fa-solid fa-magnifying-glass"></i>Search</button>
+                          </a>
+                      </li>
+                      <li class="nav__item og">
+                        <a href="#about" class="nav__link">
+                          <button class="account_nav_btn"><i class="fa-regular fa-user"></i></button>
+                        </a>
+                    </li>
+                      
                         
 
                         
 
                         <li class="nav__item op">
-                            <a href="#contactme" class="nav__link">
+                            <a href="#shop" class="nav__link">
                                 <i class='material-symbols-outlined nav__icon'>search</i>
                                 <span class="nav__name">search</span>
                             </a>
                         </li>
+                        
                         <li class="nav__item op">
                             <a href="#cart.html" class="nav__link">
                                 <i class="material-symbols-outlined nav__icon">shopping_bag</i>
                                 <span class="nav__name">Cart</span>
                             </a>
                         </li>
-                        <li class="nav__item op">
+                        <li onclick="openNav()" class="nav__item op">
                             <a  class="nav__link">
                                 <i class='material-symbols-outlined nav__icon'>menu</i>
-                                <span onclick="openNav()" class="nav__name">Menu</span>
+                                <span  class="nav__name">Menu</span>
                             </a>
                         </li>
                     </ul>
@@ -101,6 +113,7 @@
                 </div>
                 
                 <div style="display: flex;">
+                    
                     <button class="material-symbols-outlined cart_btn kvr_btn_blue">
                         shopping_bag
                         </button>
@@ -111,67 +124,14 @@
                 <img src="assets/img/perfil.png" alt="" class="nav__img">
             </nav>
         </header>
+        
+        <!-- search input -->
         <!-- <center>
-            <div class="others">
-                <div class="dropdown">
-                    <button class="dropbtn">#tbf Furniture <i class="fa-solid fa-caret-down"></i></button>
-                    <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                  </div>
-                  <div class="dropdown">
-                    <button class="dropbtn">Office Chairs <i class="fa-solid fa-caret-down"></i></button>
-                    <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                  </div>
-                  <div class="dropdown">
-                    <button class="dropbtn">Office Tables <i class="fa-solid fa-caret-down"></i></button>
-                    <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                  </div>
-                  <div class="dropdown">
-                    <button class="dropbtn">Workstations <i class="fa-solid fa-caret-down"></i></button>
-                    <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                  </div>
-                  <div class="dropdown">
-                    <button class="dropbtn">Office Storage <i class="fa-solid fa-caret-down"></i></button>
-                    <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                  </div>
-                  <div class="dropdown">
-                    <button class="dropbtn">Office Furniture <i class="fa-solid fa-caret-down"></i></button>
-                    <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                  </div>
-                  <button class="kvr_btn_blue" style="padding: 15px;"><i class="fa-solid fa-bolt"></i> Bulk Oders</button>
-                  
-            </div>
-        </center> -->
-
-        <center>
             <div class="search_bar_for_big">
                 <input type="text" id="search_products" name="search_products" placeholder="Search Products Here">
                 <button class="kvr_btn_blue" style="padding: 15px;">Search</button>
             </div>
-        </center>
+        </center> -->
 
 <!-- godfather nav start -->
 
@@ -204,10 +164,432 @@
     <!-- <button style="margin-top: 20px;" onclick="check_product()" class="kvr_btn_blue">Buy</button> -->
   </center>
 
+<!-- content start -->
 
 
 
 
+
+  <div class="banner">
+    
+
+    <div class="banner_container">
+        <div class="text_banner">
+            <div class="banner_img">
+                <img class="og" src="images/banner/Bannerpic_1.png" alt="Loading...">
+                <img class="op" src="images/banner/Bannerpic_2_responsive.png" alt="Loading...">
+            </div>
+            <div class="text_banner_inside_logo">
+                <img src="images/logo/Shri Ganeshaya Namha.png" alt="Loading...">
+            </div>
+            <div class="text_banner_inside">
+                <h4>The Bigfish</h4>
+            </div>
+            
+            <div class="text_banner_inside_2">
+                <h4>Creative Communications</h4>
+            </div>
+            <div class="text_banner_inside_btn">
+                <button class="kvr_btn_blue_2">Shop Now</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="categories color_black">
+    <center>
+        <h1 class="categories_title">CATEGORIES</h1>
+    </center>
+
+    <div class="wooden_table color_black og">
+
+        <h2 class="product_titles">Products</h2>
+        <div class="product_cards flex">
+            <div class="card_content">
+                <img src="images/example/wteg1.jpeg" alt="Loading...">
+                
+                <div class="info">
+                    <div class="flex">
+                        <div>
+                            wooden table
+                    <br>
+                    <span class="sp">$30</span>
+                    <span class="cp">$50</span>
+                    <br>
+                    <a href="">See More.</a>
+                        </div>
+                        <div>
+                            
+                            <button class="kvr_btn_blue_3">Add</button>
+                            <br>
+                            <span class="discount_span">40% OFF</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+            <div class="card_content">
+                <img src="images/example/wteg1.jpeg" alt="Loading...">
+                
+                <div class="info">
+                    <div class="flex">
+                        <div>
+                            wooden table
+                    <br>
+                    <span class="sp">$30</span>
+                    <span class="cp">$50</span>
+                    <br>
+                    <a href="">See More.</a>
+                        </div>
+                        <div>
+                            
+                            <button class="kvr_btn_blue_3">Add</button>
+                            <br>
+                            <span class="discount_span">40% OFF</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+            <div class="card_content">
+                <img src="images/example/wteg1.jpeg" alt="Loading...">
+                
+                <div class="info">
+                    <div class="flex">
+                        <div>
+                            wooden table
+                    <br>
+                    <span class="sp">$30</span>
+                    <span class="cp">$50</span>
+                    <br>
+                    <a href="">See More.</a>
+                        </div>
+                        <div>
+                            
+                            <button class="kvr_btn_blue_3">Add</button>
+                            <br>
+                            <span class="discount_span">40% OFF</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        <div class="product_cards flex">
+            <div class="card_content">
+                <img src="images/example/wteg1.jpeg" alt="Loading...">
+                
+                <div class="info">
+                    <div class="flex">
+                        <div>
+                            wooden table
+                    <br>
+                    <span class="sp">$30</span>
+                    <span class="cp">$50</span>
+                    <br>
+                    <a href="">See More.</a>
+                        </div>
+                        <div>
+                            
+                            <button class="kvr_btn_blue_3">Add</button>
+                            <br>
+                            <span class="discount_span">40% OFF</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+            <div class="card_content">
+                <img src="images/example/wteg1.jpeg" alt="Loading...">
+                
+                <div class="info">
+                    <div class="flex">
+                        <div>
+                            wooden table
+                    <br>
+                    <span class="sp">$30</span>
+                    <span class="cp">$50</span>
+                    <br>
+                    <a href="">See More.</a>
+                        </div>
+                        <div>
+                            
+                            <button class="kvr_btn_blue_3">Add</button>
+                            <br>
+                            <span class="discount_span">40% OFF</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+            <div class="card_content_see_more">
+                
+                
+                <a href="">Click Here To See More.</a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+  </div>
+  <!-- mobile view -->
+<!--  -->
+<!--  -->
+<!--  -->
+
+    <div class="op product_responsive">
+        
+
+
+        <div class="product_cards_responsive flex">
+        
+            
+
+
+
+            <div class="card_content">
+                <img src="images/example/wteg1.jpeg" alt="Loading...">
+                
+                <div class="info">
+                    <div class="flex">
+                        <div>
+                            wooden table
+                    <br>
+                    <span class="sp">$30</span>
+                    <span class="cp">$50</span>
+                    <br>
+                    <a href="">See More.</a>
+                        </div>
+                        <div>
+                            
+                            <button class="kvr_btn_blue_3">Add</button>
+                            <br>
+                            <span class="discount_span">40% OFF</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card_content">
+                <img src="images/example/wteg1.jpeg" alt="Loading...">
+                
+                <div class="info">
+                    <div class="flex">
+                        <div>
+                            wooden table
+                    <br>
+                    <span class="sp">$30</span>
+                    <span class="cp">$50</span>
+                    <br>
+                    <a href="">See More.</a>
+                        </div>
+                        <div>
+                            
+                            <button class="kvr_btn_blue_3">Add</button>
+                            <br>
+                            <span class="discount_span">40% OFF</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="product_cards_responsive flex">
+        
+            
+
+
+
+            <div class="card_content">
+                <img src="images/example/wteg1.jpeg" alt="Loading...">
+                
+                <div class="info">
+                    <div class="flex">
+                        <div>
+                            wooden table
+                    <br>
+                    <span class="sp">$30</span>
+                    <span class="cp">$50</span>
+                    <br>
+                    <a href="">See More.</a>
+                        </div>
+                        <div>
+                            
+                            <button class="kvr_btn_blue_3">Add</button>
+                            <br>
+                            <span class="discount_span">40% OFF</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card_content">
+                <img src="images/example/wteg1.jpeg" alt="Loading...">
+                
+                <div class="info">
+                    <div class="flex">
+                        <div>
+                            wooden table
+                    <br>
+                    <span class="sp">$30</span>
+                    <span class="cp">$50</span>
+                    <br>
+                    <a href="">See More.</a>
+                        </div>
+                        <div>
+                            
+                            <button class="kvr_btn_blue_3">Add</button>
+                            <br>
+                            <span class="discount_span">40% OFF</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!-- mobile view end -->
+
+
+
+  <center>
+    <button class="all_categories_btn">
+        All Categories
+      </button>
+      <center>
+        <h1 class="categories_title color_black">About Us</h1>
+    </center>
+  </center>
+  <iframe class="about_us_map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14024.62323883138!2d77.2088987!3d28.5049596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1c300000001%3A0xe3791ef69a26451a!2sTHEBIGFISH!5e0!3m2!1sen!2sin!4v1684921932959!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <center>
+
+    <div class="bg_black">
+        <img src="images/logo/Shri Ganeshaya Namha.jpg" alt="Loading..." class="footer_logo">
+    <h1 class="color_black">The Bigfish</h1>
+    <h3 class="color_black">Creative Communications</h3>
+    </div>
+</center>
+  <!-- <div class="footer color_black">
+    
+    <div class="flex footer">
+        <div class="footer_company_name">
+            The Bigfish
+            <br>
+            <a href="#">Home</a>
+            <br>
+            <a href="">About Us</a>
+        </div>
+        <div class="footer_shop left_space">
+            Shop
+            <br>
+            <a href="">Wooden Tables</a>
+            <br>
+            <a href="">Wooden Chairs</a>
+            <br>
+            <a href="">Workstations</a>
+        </div>
+        <div class="footer_visit left_space">
+            Visit Our Store
+            <br>
+            <span>Plot No. 407, Indra Encalve Road, near IGNOU, Neb Sarai, New Delhi, Delhi 110068</span>
+        </div>
+        <div class="footer_contact left_space">
+            Contact Us
+            <br>
+            <span><i class="fa-solid fa-phone"></i>+91 9811764643</span>
+            <br>
+            <span><i class="fa-solid fa-envelope"></i>kamalrana@thebigfish.in</span>
+        </div>
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+<!-- content end -->
+
+<!-- footer -->
+
+
+<footer>
+    <div class="footer">
+      <div class="contain">
+      <div class="col">
+        <h2>The Bigfish</h2>
+        <ul>
+            <li>Home</li>
+          <li>About us</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Shop</h2>
+        <ul>
+          <li>Tables</li>
+          <li>Chairs</li>
+          <li>Workstations</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Visit Us</h2>
+        <ul>
+          <li>Plot No. 407, Indra Encalve Road, near IGNOU, Neb Sarai, New Delhi, Delhi 110068</li>
+        </ul>
+      </div>
+      
+      <div class="col">
+        <h2>Contact</h2>
+        <ul>
+          <li>+91 98117 64643</li>
+          <li>+91 76786 85136</li>
+          <li>kamalrana@thebigfish.in</li>
+        </ul>
+      </div>
+      
+    <div class="clearfix"></div>
+    </div>
+    </div>
+    </footer>
+    
+
+
+
+<!-- footer-end -->
 
 
 
