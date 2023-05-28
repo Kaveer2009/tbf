@@ -49,6 +49,38 @@ function openNav() {
 
 // checking product
 
+var head_name = "";
+
+
 function check_product() {
     window.location = "view_product.html";
+}
+
+function check_order_wooden_table() {
+    window.location = "view_product.html";
+    head_name = "Wooden Table";
+    
+    localStorage.setItem("Product Name", head_name);
+    
+    set_head_name = localStorage.getItem("Product Name");
+    document.getElementById("title").innerHTML = set_head_name;
+    console.log(set_head_name);    
+
+}
+
+function start(){
+    head_name = "Wooden Table";
+    
+    localStorage.setItem("Product Name", head_name);
+    
+    set_head_name = localStorage.getItem("Product Name");
+    document.getElementById("title").innerHTML = set_head_name;
+    console.log(set_head_name);
+}
+
+start();
+
+
+function back_to_home() {
+    window.location = "index.html";
 }

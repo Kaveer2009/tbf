@@ -63,6 +63,7 @@
                           <a href="#shop" class="nav__link" id="shop-hover">
                               <i class='bx bx-home-alt nav__icon'></i>
                               <span class="nav__name">Shop </span>
+                              
                           </a>
                           
                       </li>
@@ -195,7 +196,7 @@
         </div>
     </div>
   </div>
-  <div class="categories color_black">
+  <div id="shop" class="categories color_black">
     <center>
         <h1 class="categories_title">CATEGORIES</h1>
     </center>
@@ -204,7 +205,7 @@
 
         <h2 class="product_titles">Products</h2>
         <div class="product_cards flex">
-            <div class="card_content">
+            <div onclick="check_order_wooden_table()" class="card_content">
                 <img src="images/example/wteg1.jpeg" alt="Loading...">
                 
                 <div class="info">
@@ -489,10 +490,14 @@
     <button class="all_categories_btn">
         All Categories
       </button>
-      <center>
-        <h1 class="categories_title color_black">About Us</h1>
-    </center>
+      
   </center>
+
+
+
+  <center>
+    <h1 id="about" class="categories_title color_black">About Us</h1>
+</center>
   <iframe class="about_us_map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14024.62323883138!2d77.2088987!3d28.5049596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1c300000001%3A0xe3791ef69a26451a!2sTHEBIGFISH!5e0!3m2!1sen!2sin!4v1684921932959!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <center>
 
