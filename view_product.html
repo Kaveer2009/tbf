@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="images/logo/Shri Ganeshaya Namha 2.png" type="image/x-icon">
   <link rel="stylesheet" href="view_product.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div class="flex head_container">
@@ -15,11 +16,100 @@
       <span class="material-symbols-outlined">
         arrow_back
         </span>
+        
     </div>
     <div id="title" class="title">
       
     </div>
   </div>
+
+
+  <div class="flex">
+    <div class="image-container">
+      <img onclick="change_image_1()" src="images/example/wteg1.jpeg" alt="Loading...">
+      <img onclick="change_image_2()" src="images/example/wteg2.png" alt="Loading...">
+      <img onclick="change_image_3()" src="images/example/wteg3.jpeg" alt="Loading...">
+      <img onclick="change_image_4()"src="images/example/wteg4.jpeg" alt="Loading...">
+      <img onclick="change_image_5()" src="images/example/wteg5.png" alt="Loading...">
+    </div>
+
+    <div id="image-show" class="image-show">
+      <img src="images/example/wteg1.jpeg" alt="Loading...">
+    </div>
+
+    <div class="product_info">
+      <h3 id="product_name">
+        
+      </h3>
+      <br>
+      <span class="sp">
+        $30
+      </span>
+      <span class="cp">
+        $50
+      </span>
+      <span class="discount_span">
+        40% OFF
+      </span>
+      <br>
+
+      <br>
+      <span>
+        A table is an item of furniture with a raised flat top and is supported most commonly by 1 or 4 legs (although some can have more), used as a surface for working at, eating from or on which to place things.
+      </span>
+      <br>
+      <br>
+      <button  class="buy_btn"><i class="fa-regular fa-hand-pointer"></i> Buy Now</button>
+      <button onclick="add_to_cart()" class="cart_btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+    </div>
+  </div>
+  
+  <!-- footer -->
+
+
+<footer>
+  <div class="footer">
+    <div class="contain">
+    <div class="col">
+      <h2>The Bigfish</h2>
+      <ul>
+          <li>Home</li>
+        <li>About us</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>Shop</h2>
+      <ul>
+        <li>Tables</li>
+        <li>Chairs</li>
+        <li>Workstations</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>Visit Us</h2>
+      <ul>
+        <li>Plot No. 407, Indra Encalve Road, near IGNOU, Neb Sarai, New Delhi, Delhi 110068</li>
+      </ul>
+    </div>
+    
+    <div class="col">
+      <h2>Contact</h2>
+      <ul>
+        <li>+91 98117 64643</li>
+        <li>+91 76786 85136</li>
+        <li>kamalrana@thebigfish.in</li>
+      </ul>
+    </div>
+    
+  <div class="clearfix"></div>
+  </div>
+  </div>
+  </footer>
+  
+
+
+
+<!-- footer-end -->
 
 <!-- js links -->
   <script src="app.js"></script>
